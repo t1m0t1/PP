@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="Css/main.css">
+    <title>PAGINA PRINCIPAL</title>
+</head>
+
+<body>
+    <div class="datatable-container">
+        <div class="header-tools">
+            <div class="tools">
+                <ul>
+                    <li><span><input type="checkbox" ></span></li>
+                    <li>
+                        <button>
+                            <i class="material-icons">add_circle</i>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <i class="material-icons">edit</i>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <i class="material-icons">delete</i>
+                        </button>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="search">
+                <input type="text" class="search-input">
+            </div>
+        </div>
+        <table class="datatable">
+            <thead>
+                <th></th>
+                <th>Estado</th>
+                <th>Nombre</th>
+                <th>Descripcion</th>
+                <th>Cantidad</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" class="table-checkbox"></td>
+                    <td><span class="alto"></span></td>
+                    <td>teclado</td>
+                    <td>teclado marca genius</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="table-checkbox"></td>
+                    <td><span class="medio"></span></td>
+                    <td>toner</td>
+                    <td>toner para samsung m283</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="table-checkbox"></td>
+                    <td><span class="bajo"></span></td>
+                    <td>toner</td>
+                    <td>toner hp 1006</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="footer-tools">
+            <div class="list-items">
+                mostrar
+                <select name="entries" class="entries">
+                    <option value="5">5</option>
+                    <option value="10" selected>10</option>
+                    <option value="15" >15</option>
+                </select>
+                entradas
+            </div>
+            <div class="pages">
+                <ul>
+                    <li><span class="active">1</span></li>
+                    <li><button>2</button></li>
+                    <li><button>3</button></li>
+                    <li><button>4</button></li>
+                    <li><button>...</button></li>
+                    <li><button>9</button></li>
+                    <li><button>10</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
