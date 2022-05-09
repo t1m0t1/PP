@@ -12,7 +12,65 @@
     <title>PAGINA PRINCIPAL</title>
 </head>
 
-<body>
+<body> 
+<a href="">Stock</a>
+    <header>
+        <div class="dv-nav">
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <div class="navbar-collapse collapse show" id="navbarColor01">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a href="" class="nav-link active">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Carga</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Salida</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href=""  class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Areas</a>
+                            <div class="dropdown-menu">
+                                <a href="" class="dropdown-item">Crear Area</a>
+                                <a href="" class="dropdown-item">Modificar Area</a>
+                                <a href="" class="dropdown-item">Borrar Area</a>
+                                <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Usuarios</a>
+                            <div class="dropdown-menu">
+                                <a href="" class="dropdown-item">Crear Usuario</a>
+                                <a href="" class="dropdown-item">Modificar Usuario</a>
+                                <a href="" class="dropdown-item">Borrar Usuario</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                            </li>
+
+                                <li class="nav-item dropdown">
+                                    <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Historial</a>
+                                <div class="dropdown-menu">
+                                <a href="" class="dropdown-item">Historial de Carga</a>
+                                <a href="" class="dropdown-item">Historial de Salida</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                            </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Reposicion</a>
+                                </li>
+                            </ul>
+                    
+                        </div>
+                    
+                </div>
+                
+            </nav>    
+        </div>
+    </header>
     <div class="datatable-container">
         <div class="header-tools">
             <div class="tools">
@@ -40,31 +98,32 @@
                 <input type="text" class="search-input">
             </div>
         </div>
-        <table class="datatable">
+        <table class="table table-hover">
             <thead>
-                <th></th>
-                <th>Estado</th>
-                <th>Nombre</th>
-                <th>Descripcion</th>
-                <th>Cantidad</th>
+                <tr class="table-primary">
+                    <th scope="col">Estado</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Descripcion</th>
+                    <th scope="col">Cantidad</th>
+                </tr>
             </thead>
 
             <tbody>
-                <tr>
+                <tr class="table-success">
                     <td><input type="checkbox" class="table-checkbox"></td>
                     <td><span class="alto"></span></td>
                     <td>teclado</td>
                     <td>teclado marca genius</td>
                     <td>5</td>
                 </tr>
-                <tr>
+                <tr class="table-warning">
                     <td><input type="checkbox" class="table-checkbox"></td>
                     <td><span class="medio"></span></td>
                     <td>toner</td>
                     <td>toner para samsung m283</td>
                     <td>3</td>
                 </tr>
-                <tr>
+                <tr class="table-danger">
                     <td><input type="checkbox" class="table-checkbox"></td>
                     <td><span class="bajo"></span></td>
                     <td>toner</td>
@@ -83,18 +142,35 @@
                 </select>
                 entradas
             </div>
-            <div class="pages">
-                <ul>
-                    <li><span class="active">1</span></li>
-                    <li><button>2</button></li>
-                    <li><button>3</button></li>
-                    <li><button>4</button></li>
-                    <li><button>...</button></li>
-                    <li><button>9</button></li>
-                    <li><button>10</button></li>
+            <div>
+                <ul class="pagination">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#">&laquo;</a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">4</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">5</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">&raquo;</a>
+                  </li>
                 </ul>
-            </div>
+              </div>
+              
         </div>
     </div>
+
 </body>
+
 </html>
