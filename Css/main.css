@@ -55,7 +55,8 @@
 }
 
 .datatable-container .header-tools .search .search-input{
-    width: 100%;
+    width: 50%;
+    margin-left: auto;
 /*     background-color: var(--input-bg-color); */
     display: block;
     box-sizing: border-box;
