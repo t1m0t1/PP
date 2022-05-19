@@ -66,86 +66,89 @@
         <button class="btn btn-dark" type="submit">+</button>
        </div> -->
 
-       <div class="mt-5 mb-4">
+       <div class="bg-secondary bg-gradient">
+        <div class="mt-5 mb-4 ">
 
-        <form action=""> 
-
-            <div class="row">
-            <div class="col-md-3">
-                <label class="col-md-2" for="">Nombre</label>
-                <input type="text" class="form-control col-md-4">
-            </div>
-
-                <div class="col-md-3">   
-                    <label class="col-md-2" for="">Categoria</label>
-                    <select class="form-control col-md-4" name="" id="">
-                        <option value="" selected></option>
-                        <option value="">Informatica</option>
-                        <option value="">Comestible</option>
-                        <option value="">Limpieza</option>
-                    </select>
-
-                </div>
-
-                <div class="col-md-3">    
-                    <label for="">Cantidad</label>
-                    <input type="number" class="form-control">
-                </div>
+            <form action=""> 
+    
+                <div class="row">
                 <div class="col-md-3">
-                    <label for="">Punto de Reposicion</label>
-                    <input type="number" class="form-control">
+                    <label class="col-md-2" for="">Nombre</label>
+                    <input type="text" class="form-control col-md-4" id="cargaNombre">
                 </div>
-            </div>
-           
-            </form>
-            </div>
-
-
-           <div class="">
-            <button class="btn btn-dark mt-4 ">CARGAR</button>
+    
+                    <div class="col-md-3">   
+                        <label class="col-md-2" for="">Categoria</label>
+                        <select class="form-control col-md-4" name="" id="cargaCategoria">
+                            <option value="-1" selected></option>
+                            <option value="0">Informatica</option>
+                            <option value="1">Comestible</option>
+                            <option value="2">Limpieza</option>
+                        </select>
+    
+                    </div>
+    
+                    <div class="col-md-3">    
+                        <label for="">Cantidad</label>
+                        <input type="number" class="form-control" id="cargaCantidad">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="">Punto de Reposicion</label>
+                        <input type="number" class="form-control" id="cargaPuntRepo">
+                    </div>
+                </div>
+               
+                </form>
+                </div>
+    
+    
+               <div class="">
+                <button class="btn btn-dark mt-4 ">CARGAR</button>
+               </div>
            </div>
+            <div>
+            <div class="tb-tools">
+            <button class="btn btn-dark mt-5 mb-4" id="btnFormulario" onclick="MostrarOcultar()">Ocultar</button>
+        </div >
+                                        <!-- Tabla -->
+        <div id="dv-table" hidden>
+            <table class="table table-dark">
+                <thead>
+                    <tr class="table-dark">
+                        <th scope="col">Estado</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Descripcion</th>
+                        <th scope="col">Cantidad</th>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <tr class="table-success">
+                        <td><input type="checkbox" class="table-checkbox">
+                            <span class="alto"></span></td>
+                        
+                        <td>teclado</td>
+                        <td>teclado marca genius</td>
+                        <td>5</td>
+                    </tr>
+                    <tr class="table-warning">
+                        <td><input type="checkbox" class="table-checkbox"><span class="medio"></span></td>
+                        <td>toner</td>
+                        <td>toner para samsung m283</td>
+                        <td>3</td>
+                    </tr>
+                    <tr class="table-danger">
+                        <td><input type="checkbox" class="table-checkbox"><span class="bajo"></span></td>
+                        <td>toner</td>
+                        <td>toner hp 1006</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+                </div>
        </div>
-        <div>
-        <div class="tb-tools">
-        <button class="btn btn-dark mt-5 mb-4" id="btnFormulario" onclick="MostrarOcultar()">Ocultar</button>
-    </div >
-                                    <!-- Tabla -->
-    <div id="dv-table" hidden>
-        <table class="table table-dark">
-            <thead>
-                <tr class="table-dark">
-                    <th scope="col">Estado</th>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Descripcion</th>
-                    <th scope="col">Cantidad</th>
-                </tr>
-            </thead>
 
-            <tbody>
-                <tr class="table-success">
-                    <td><input type="checkbox" class="table-checkbox">
-                        <span class="alto"></span></td>
-                    
-                    <td>teclado</td>
-                    <td>teclado marca genius</td>
-                    <td>5</td>
-                </tr>
-                <tr class="table-warning">
-                    <td><input type="checkbox" class="table-checkbox"><span class="medio"></span></td>
-                    <td>toner</td>
-                    <td>toner para samsung m283</td>
-                    <td>3</td>
-                </tr>
-                <tr class="table-danger">
-                    <td><input type="checkbox" class="table-checkbox"><span class="bajo"></span></td>
-                    <td>toner</td>
-                    <td>toner hp 1006</td>
-                    <td>1</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
 
 
     

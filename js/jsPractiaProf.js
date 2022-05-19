@@ -10,3 +10,18 @@ function MostrarOcultar(){
 
 /* crear funcion para cargar de 1 en 1 */
 /* Crear funcion para poder agregar nueva linea de carga */ 
+
+function CargaRegistro(){
+    let nombre = document.getElementById("cargaNombre");
+    let categoria = document.getElementById("cargaCategoria");
+    let cantidad = document.getElementById("cargaCantidad");
+    let puntoRepo = document.getElementById("cargaPuntRepo");
+
+    //coneccion base de datos
+
+    //limpiar
+    nombre.value = "";
+    categoria.value = -1;
+    cantidad.value = '';
+    puntoRepo = '';
+}
