@@ -11,7 +11,7 @@ function MostrarOcultar(){
 /* crear funcion para cargar de 1 en 1 */
 /* Crear funcion para poder agregar nueva linea de carga */ 
 
-function CargaRegistro(){
+/* function CargaRegistro(){
     let nombre = document.getElementById("cargaNombre");
     let categoria = document.getElementById("cargaCategoria");
     let cantidad = document.getElementById("cargaCantidad");
@@ -25,3 +25,4 @@ function CargaRegistro(){
     cantidad.value = '';
     puntoRepo = '';
 }
+ */
